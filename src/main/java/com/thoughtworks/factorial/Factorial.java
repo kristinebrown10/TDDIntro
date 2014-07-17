@@ -6,6 +6,8 @@ public class Factorial {
             return 1;
         else if (i == 2)
             return 2;
+        else if (i > 2)
+            return (i*compute(i-1));
         return -1;
     }
 }
