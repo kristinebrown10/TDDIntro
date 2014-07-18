@@ -5,17 +5,11 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class AccountTests {
-    private final Account account = new Account();
+    private final Account account = new Account(100);
 
     @Test
     public void shouldIncreaseMyBalanceWhenIDepositMoney(){
-        //Arrange
-        account.setBalance(100);
-
-        //Action
         account.deposit(50);
-
-        //Assert
         assertThat(account.getBalance(), is(150));
     }
 

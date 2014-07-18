@@ -6,6 +6,9 @@ package com.thoughtworks.accountbalance;
 public class Account {
     private int balance;
 
+    public Account(int b) {
+        balance = b;
+    }
     public void setBalance(int b) {
         balance = b;
     }
